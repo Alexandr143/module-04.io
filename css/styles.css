@@ -17,13 +17,11 @@ html{
     clear: both;
 }
 .wrapper{
-    width: 1195px;
+    width: 1200px;
     margin: 0 auto;
 }
-.contant{
-    padding: 0 31px;
-    overflow: hidden;
-    padding-bottom: 80px;
+.container{
+    padding: 0 40px;
 }
 .logo {
     color: #555252;
@@ -31,138 +29,107 @@ html{
     font-size: 30px;
     font-weight: 300;
     float: left;
-    width: 605px;
+    text-transform: uppercase;
+    letter-spacing: -0.6px;
+    margin: 0;
     padding-top: 40px;
 }
-li:last-child{
-    margin: 0;
-}
-h1::first-letter{
+.logo::first-letter{
     content: "";
     font-family: "Roboto - Black", sans-serif;
     font-weight: 700;
     letter-spacing: -0.6px;
     color: #1abc9c;
 }
-ul{
-    margin: 0;
-}
-li {
-    float: left;
-    margin-right: 39px;
-    padding-top: 65px;
-    list-style: none;
-}
-li :last-child{
-    margin: 0;
-}
-ul li a {
-    color: #0f0101;
-    font-family: "Open Sans";
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: -0.28px;
-    text-decoration: none;
-    margin-right: 38px;
-}
-li :hover{
-    color: #1abc9c;
-}
-h1 {
-    font-family: "Roboto";
-    letter-spacing: -0.6px;
-}
-h1 a{
+.logo a{
     list-style: none;
     text-decoration: none;
     color: #555252;
     font-size: 30px;
     font-family: "Roboto";
 }
-h2 {
+.navigation{
+    width: 560px;
+    float: right;
+}
+.navigation-container{
+    float: right;
+}
+.navigation-item{
+    float: left;
+    margin-right: 35px;
+    padding-top: 45px;
+    list-style: none;
+    text-transform: uppercase;
+}
+.navigation-item:last-child{
+    margin: 0;
+}
+.navigation-item :hover{
+    color: #1abc9c;
+}
+.navigation-container a{
+    color: #0f0101;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.28px;
+    text-decoration: none;
+}
+.name{
     color: #515151;
     font-family: "Roboto",sans-serif;
     font-size: 48px;
     font-weight: 700;
     text-align: center;
-    padding-top: 70px;  
+    padding-top: 90px;
+    padding-bottom: 90px;
+    text-transform: uppercase;
 }
-h2:last-child{
+.name:after{
+    display: block;
+    width: 164px;
+    height: 7px;
+    background-color:#4ec6ab;
+    content: '';
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.photo:last-child{
     margin: 0;
 }
-.photo1{
+.photo{
     float: left;
     margin: 0;
     margin-right: 30px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
-.photo2{
-    float: left;
-    margin: 0;
-    margin-right: 30px;
-}
-.photo1:last-child{
-    margin: 0;
-}
-.photo2:last-child{
-    margin: 0;
-}
-.photo3:last-child{
-    margin: 0;
-}
-.photo1{
+.photo figcaption{
     width: 255px;
     height: 40px;
     color: #ffffff;
     font-size: 18px;
     font-weight: 400;
     font-family: "Roboto";
+}
+.photo{
     background-image: linear-gradient(to right,#323232 78%, #8c8c8c 22%);
 }
-.photo1{
-    width: 255px;
-    height: 40px;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: "Roboto";
-    background-image: linear-gradient(to right,#323232 78%, #8c8c8c 22%);
-}
-.photo1{
+.photo:hover{
     width: 255px;
     height: 322px;
-}
-.photo1:hover{
-    cursor: pointer;
-    background-image: linear-gradient( to right, rgba(26, 188, 156,1) 78%, rgba(26, 188, 156,0.44) 22%);
-}
-.photo2{
-    width: 255px;
-    height: 40px;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: "Roboto";
-    background-image: linear-gradient(to right,#323232 78%, #8c8c8c 22%);
-}
-.photo2{
-    width: 255px;
-    height: 322px;
-    margin-bottom: 25px;
-}
-.photo2:hover{
+    display: block;
     cursor: pointer;
     background-image: linear-gradient( to right, rgba(26, 188, 156,1) 78%, rgba(26, 188, 156,0.44) 22%);
 }
 img{
     display: block;
-    margin: 0;
-    padding: 0;
 }
 .cost{
     position: relative;
     left: 15px;
     top: 10px;
+    text-transform: uppercase;
 }
 .number1{
     padding-left: 90px;
@@ -176,60 +143,62 @@ img{
 .number4{
     padding-left: 68px;
 }
-.line{
-    position: relative;
-    left: 43%;
-    padding-bottom: 90px; 
+.name2{
+    color: #515151;
+    font-family: "Roboto",sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 66px;
+    padding-bottom: 80px;
+    text-transform: uppercase;
 }
-.unvisible{
-    visibility: hidden;
-    margin: 0 auto;
-}
-.line::after{
+.name2:after{
     display: block;
     width: 164px;
     height: 7px;
     background-color:#4ec6ab;
     content: '';
-} 
-.line1::before{
-    display: block;
-    width: 136px;
-    height: 3px;
-    background-color:#1abc9c;
-    content: '';
-} .line span{
-    visibility: hidden;
-} 
-.line1 span{
-    visibility: hidden;
-} 
+    margin: 0 auto;
+    margin-top: 20px;
+}
 .photo3{
     float: left;
     width: 350px;
-    margin-right: 30px;
+    margin-right: 31px;
 }
-h3 {
+.photo3:last-child{
+    margin: 0;
+}
+.sign{
     color: #555252;
     font-family: "Open Sans",sans-serif;
     font-size: 18px;
     font-weight: 600;
     line-height: 26px;
     letter-spacing: -0.36px;
-    padding-bottom: 5px;
+    padding-top: 10px;
 }
-p{
+.sign:after{
+    width: 136px;
+    height: 3px;
+    background-color: #4ec6ab;
+    display: block;
+    content: '';
+    margin-top: 10px;
+}
+.describe{
     color: #555252;
     font-family: "Open Sans";
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
-    padding-top: 10px;
-    padding-bottom: 8px;
+    padding-top: 20px;
+    padding-bottom: 13px;
 }
-button{
+.click{
     width: 160px;
-    height: 55px;
+    height: 50px;
     border-radius: 3px;
     background-color: #4ec6ab;
     border: 1px solid #4ec6ab;
@@ -238,4 +207,5 @@ button{
     font-size: 16px;
     font-weight: 300;
     cursor: pointer;
+    margin-bottom: 80px;
 }
